@@ -1,0 +1,40 @@
+> felix is from http://www.example.com/cat.jpg
+> music is from http://www.example.com/music.mp3
+> data is from http://www.example.com/data.json
+> random is from http://www.random.org/integers/?num=1&min=1&max=6&col=1&base=10&format=plain&rnd=new
+
+> felix x is 10px and y is 20px
+
+> over 10s felix height is 30px and width is height
+
+> felix rotation is 34deg
+
+> when felix x is greater than stage width / 2 felix is not visible
+> when felix is clicked forget felix
+> every 10s felix x is felix x + 2px
+
+> when button is clicked and felix is visible felix is not visible
+> when button is clicked and felix is not visible felix is visible
+
+> while button is clicked
+
+> felix width is sprite 1 width from http://www.example.com/data.json
+
+> when keypress is up felix y is felix y + 1
+
+> felix is manipulable
+
+> felix is a sprite
+
+video is from https://upload.wikimedia.org/wikipedia/commons/8/87/Animated_GIF_from_the_1919_Feline_folies_by_Pat_Sullivan.gif
+video x is 25%
+video height is 200%
+video width is 200%
+
+cat is from https://upload.wikimedia.org/wikipedia/commons/0/0f/Felix_the_cat.svg
+cat width is 20%
+cat rotation is -90deg
+cat is visible
+
+after 2s cat is not visible
+after 2s video is visible

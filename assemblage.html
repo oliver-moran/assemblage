@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assemblage</title>
+        <meta charset="utf-8">
+        <link href="css/normalize-3.0.1.css" rel="stylesheet" type="text/css">
+
+        <!-- TweenJS -->
+        <script type="text/javascript" src="js/tweenjs-0.5.1.min.js"></script>
+        <!-- EaselJS -->
+        <script type="text/javascript" src="js/easeljs-0.7.1.min.js"></script>
+        <script type="text/javascript" src="js/movieclip-0.7.1.min.js"></script>
+        <!- SoundJS -->
+        <script type="text/javascript" src="js/soundjs-0.5.2.min.js"></script>
+        <script type="text/javascript" src="js/flashplugin-0.5.2.min.js"></script>
+        <!- PreloadJS -->
+        <script type="text/javascript" src="js/preloadjs-0.4.1.min.js"></script>
+        
+        <!-- PEG.js -->
+        <script type="text/javascript" src="js/peg-0.8.0.min.js"></script>
+        
+        <script type="text/javascript">
+            
+            window.onload = function () {
+                var grammar = read("assemblage.pegjs");
+                var parser = PEG.buildParser(grammar);
+
+                var script = read("sample.assemblage");
+                var result = parser.parse(script);
+
+                function read(url) {
+                    var req = new XMLHttpRequest();
+                    req.open("GET", url, false);
+                    req.send();
+                    return req.responseText || null;
+                }
+            };
+            
+        </script>
+        
+        <style type="text/css">
+            html, body {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+    </body>
+</html>
